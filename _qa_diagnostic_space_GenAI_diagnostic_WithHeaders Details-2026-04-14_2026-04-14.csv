@@ -1,0 +1,2 @@
+Time,AuthN,Client/Username,Role,Remote Address,HTTP Status,MCP Method,Name,JSON-RPC Status,Resp Time
+[object Object],AnonymousAuthenticator,10.51.3.125,anonymous,10.51.3.125,200 T,,,,2194
