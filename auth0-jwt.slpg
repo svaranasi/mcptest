@@ -1,0 +1,129 @@
+{
+    "0": [
+        {
+            "class_build_tag": "SNAPSHOT",
+            "class_fqid": "com-snaplogic-policies-auth-mcpoauth2jwtpolicy_1-SNAPSHOT_5529a2dd4c345d4e105c8885",
+            "class_id": "com-snaplogic-policies-auth-mcpoauth2jwtpolicy",
+            "class_label": "MCP OAuth2 JWT Policy",
+            "class_version": 1,
+            "major": "APIM",
+            "minor": "com-snaplogic-policies-auth-mcpoauth2jwtpolicy",
+            "property_map": {
+                "info": {
+                    "label": {
+                        "value": "MCP OAuth2 JWT Policy"
+                    },
+                    "notes": {
+                        "value": "Authenticating requests using specified JWT token"
+                    }
+                },
+                "settings": {
+                    "Status": {
+                        "value": "Enabled"
+                    },
+                    "__control": {
+                        "expression": true,
+                        "value": ""
+                    },
+                    "domainExpr": {
+                        "expression": false,
+                        "value": "https://dev-zyelq5rmvc7spszj.us.auth0.com"
+                    },
+                    "headersToAdd": {
+                        "value": [
+                            {
+                                "expr": {
+                                    "expression": false
+                                },
+                                "name": {
+                                    "expression": false,
+                                    "value": ""
+                                }
+                            }
+                        ]
+                    },
+                    "keyExtract": {
+                        "expression": true,
+                        "value": "$.keys"
+                    },
+                    "propagateRawToken": {
+                        "value": false
+                    },
+                    "securityProps": {
+                        "value": {
+                            "rolesExpression": {
+                                "expression": true,
+                                "value": "\"role\""
+                            },
+                            "userIDExpression": {
+                                "expression": true,
+                                "value": "\"user_id\""
+                            }
+                        }
+                    }
+                }
+            },
+            "snap_pack": {
+                "_id": "policies-snap-1-SNAPSHOT",
+                "class_build_tag": "SNAPSHOT",
+                "class_fqid": "policies-snap-1-SNAPSHOT",
+                "class_id": "policies",
+                "class_version": 1
+            }
+        },
+        {
+            "class_build_tag": "SNAPSHOT",
+            "class_fqid": "com-snaplogic-policies-auth-authorizebyrole_1-SNAPSHOT_5529a2dd4c345d4e105c8885",
+            "class_id": "com-snaplogic-policies-auth-authorizebyrole",
+            "class_label": "Authorize By Role",
+            "class_version": 1,
+            "major": "APIM",
+            "minor": "com-snaplogic-policies-auth-authorizebyrole",
+            "property_map": {
+                "info": {
+                    "label": {
+                        "value": "Authorize By Role"
+                    },
+                    "notes": {
+                        "value": "Authorizing requests only for specified roles"
+                    }
+                },
+                "settings": {
+                    "Status": {
+                        "value": "Enabled"
+                    },
+                    "__control": {
+                        "expression": true,
+                        "value": ""
+                    },
+                    "roles": {
+                        "value": [
+                            {
+                                "condition": {
+                                    "expression": true,
+                                    "value": ""
+                                },
+                                "role": {
+                                    "expression": false,
+                                    "value": "role"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "snap_pack": {
+                "_id": "policies-snap-1-SNAPSHOT",
+                "class_build_tag": "SNAPSHOT",
+                "class_fqid": "policies-snap-1-SNAPSHOT",
+                "class_id": "policies",
+                "class_version": 1
+            }
+        }
+    ],
+    "class_id": "com-snaplogic-policy-export",
+    "class_version": 1,
+    "description": "",
+    "name": "auth0-jwt",
+    "source_org": "QA"
+}

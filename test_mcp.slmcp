@@ -1,0 +1,17 @@
+{
+    "asset_type": "McpServer",
+    "class_id": "com-snaplogic-mcpserver",
+    "class_version": 1,
+    "description": "",
+    "enabled": true,
+    "name": "test_mcp",
+    "org_snid": "5529a2dd4c345d4e105c8883",
+    "pipeline_path": "MCP_Server_Pipeline",
+    "policy_group_path": "auth0-jwt",
+    "snaplex_path": "mcptest",
+    "tags": [],
+    "task_parameters": {
+        "execution_timeout": 300
+    },
+    "task_type": "triggered"
+}
